@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* default layout 1280px */
+
+/*///////////////////// header /////////////////////*/
+
+body {background-color: black; /* display: flex; */ background-color: #000; font-size: 12px; line-height: 1.2;}
+#wrap {position: relative; width: 100%; max-width: 375px; /* height: 100% */; margin: 0 auto; background-color: #485861; color: #ffe6cf; overflow-x: hidden; padding-bottom: 80px;}
+
+
+
+/*///////////////////// header End /////////////////////*/
+/* /
+/
+/
+/
+/ */
+/*///////////////////// container /////////////////////*/
+
+/* index page */
+
+.text-area {margin: 0 0 0 24px;}
+.text-area .tit {font-size: 30px; font-weight: 200; line-height: 1.4; margin-bottom: 16px;}
+.text-area .tit-second {margin-bottom: 48px;}
+.text-area .desc {font-size: 15px; font-weight: 200;}
+.text-area .line {width: 40px; height: 1px; display: inline-block; position: relative; top: -1px; background-color: #ffe6cf; opacity: 0.5; margin-left: 10px;}
+
+.wrap-circle {position: relative; margin: 140px 0 0 24px;}
+.wrap-circle li {width: 246px; height: 246px; border-radius: 50%; position: absolute; transition: 1s;}
+.wrap-circle li:nth-child(1) {left: 0px; background-color: transparent; border: 1px solid rgba(0, 0, 0, 0.2); box-sizing: border-box; /* animation-delay: 0.1s; */}
+.wrap-circle li:nth-child(2) {left: 80px; background-color: #ffc000;}
+.wrap-circle li:nth-child(3) {left: 160px; background-color: #fedd15;}
+.wrap-circle li:nth-child(3):hover {background-color: #ff0000; left: 0;}
+
+.badge-yellow {position: absolute; top: 0; right: 24px; width:56px; height:56px; background-color: #ffe6cf; color: #485861; padding: 12px 0 0 12px; box-sizing: border-box; font-weight: 600; font-size: 11px; line-height: 1.6;}
+
+/* issue page */
+
+.featured {position: relative; width: 100%; height: 310px; background: #ffe6cf url("../img/issue-1.jpg") no-repeat center center; background-size: cover;}
+.wrap-text-lssue {position: absolute; bottom: 40px;}
+
+.tit-issue {position: absolute; top: 24px; right: 24px; font-size: 30px; font-weight: 400; line-height: 1.4;}
+sup {vertical-align: super; font-size: 11px; font-weight: 400; text-indent: 10%;}
+
+.slide-issue {white-space: nowrap; overflow-x: scroll; padding: 24px;}
+.slide-issue li {width: 136px; height: 80px; display: inline-block; background-size: cover; background-position: center; border-radius: 5px; margin-right: 12px;}
+.slide-issue li:nth-child(1) {background-image: url("../img/issue-2.jpg");}
+.slide-issue li:nth-child(2) {background-image: url("../img/issue-3.jpg");}
+.slide-issue li:nth-child(3) {background-image: url("../img/issue-4.jpg");}
+
+.list-txt-issue li {position: relative; padding: 16px 24px 16px 24px; border-bottom: 1px solid rgba(0, 0, 0, 0.08); display: flex; align-items: center;}
+.list-txt-issue li:after {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: .33s;}
+.list-txt-issue li:hover:after {background-color:  rgba(0, 0, 0, 0.12);}
+.list-txt-issue li:active:after {background-color:  rgba(0, 0, 0, 0.33);}
+.list-txt-issue .num {width: 24px; height: 24px; line-height: 24px; margin-right: 16px; text-align: center; background-color: #ffe6cf; color: #485861; border-radius: 50%; font-weight: 500;}
+.list-txt-issue .infos {width: 88%;}
+.list-txt-issue .title {font-size: 17px; margin-bottom: 8px;}
+.list-txt-issue .desc { font-size: 13px; font-weight: 200;}
+
+
+
+/*///////////////////// container end /////////////////////*/
