@@ -19,8 +19,8 @@ body {background-color: black; /* display: flex; */ background-color: #000; font
 
 /* index page */
 
-.text-area {margin: 0 0 0 24px;}
-.text-area .tit {font-size: 30px; font-weight: 200; line-height: 1.4; margin-bottom: 16px;}
+.text-area {margin: 0 0 40px 24px;}
+.text-area .tit {font-size: 30px; font-weight: 200; line-height: 1.2; margin-bottom: 12px;}
 .text-area .tit-second {margin-bottom: 48px;}
 .text-area .desc {font-size: 15px; font-weight: 200;}
 .text-area .line {width: 40px; height: 1px; display: inline-block; position: relative; top: -1px; background-color: #ffe6cf; opacity: 0.5; margin-left: 10px;}
@@ -34,10 +34,11 @@ body {background-color: black; /* display: flex; */ background-color: #000; font
 
 .badge-yellow {position: absolute; top: 0; right: 24px; width:56px; height:56px; background-color: #ffe6cf; color: #485861; padding: 12px 0 0 12px; box-sizing: border-box; font-weight: 600; font-size: 11px; line-height: 1.6;}
 
+
 /* issue page */
 
 .featured {position: relative; width: 100%; height: 310px; background: #ffe6cf url("../img/issue-1.jpg") no-repeat center center; background-size: cover;}
-.wrap-text-lssue {position: absolute; bottom: 40px;}
+.wrap-text-lssue {position: absolute; bottom: 0px;}
 
 .tit-issue {position: absolute; top: 24px; right: 24px; font-size: 30px; font-weight: 400; line-height: 1.4;}
 sup {vertical-align: super; font-size: 11px; font-weight: 400; text-indent: 10%;}
@@ -57,6 +58,36 @@ sup {vertical-align: super; font-size: 11px; font-weight: 400; text-indent: 10%;
 .list-txt-issue .title {font-size: 17px; margin-bottom: 8px;}
 .list-txt-issue .desc { font-size: 13px; font-weight: 200;}
 
+
+/* like page */
+
+.area-search {margin: 20px; position: relative;}
+.area-search .case-full {width: 100%; flex-shrink: 0; text-align: center; font-size: 13px; color: #ffe6cf; transition: .5s}
+.area-search .case-full::placeholder {color: rgba(255, 255, 255, 0.3)}
+.area-search .case-full:focus {outline: none; background-color:  rgba(255, 255, 255, 0.12)}
+.area-search .ico-search {position: absolute; top: 12px; left: 12px; opacity: .3;}
+
+.area-search form {display: flex;}
+.area-search .btn-cancle {flex-shrink: 0; margin-left: 20px; opacity: 0; transition: .5s;}
+.area-search .case-full:focus {width: 100%; flex-shrink: initial;}
+.area-search .case-full:focus ~ .ico-search {opacity: 1;}
+.area-search .case-full:focus ~ .btn-cancle {opacity: 1;}
+
+/* grid */
+.list-like {
+    padding: 0 24px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-auto-rows: 148px; 
+    grid-gap: 16px;
+}
+.list-like li {width: 100%; /* height: 148px */; background-color: #fedd15; background-size: cover; background-position: center; border-radius: 5px;}
+.list-like li:nth-child(1) {background-image: url("../img/likes-1.jpg");}
+.list-like li:nth-child(2) {background-image: url("../img/likes-2.jpg");}
+.list-like li:nth-child(3) {background-image: url("../img/likes-3.jpg");}
+.list-like li:nth-child(4) {background-image: url("../img/likes-4.jpg");}
+.list-like li:nth-child(5) {background-image: url("../img/likes-1.jpg");}
+.list-like li:nth-child(6) {background-image: url("../img/likes-2.jpg");}
 
 
 /*///////////////////// container end /////////////////////*/
