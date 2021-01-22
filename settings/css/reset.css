@@ -11,7 +11,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body{position:relative;line-height:1;-webkit-text-size-adjust:100%}
 
 ol, ul{list-style:none}
-ol:after, ul:after{content:'';display:block;clear:both}
+/* ol:after, ul:after{content:'';display:block;clear:both} */
 
 blockquote, q{quotes:none}
 blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
