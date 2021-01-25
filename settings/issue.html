@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/response.css" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
 </head>
 
 <body>
@@ -47,22 +48,22 @@
                 <p class="tit tit-issue">8</p>
                 <div class="wrap-text-lssue">
                     <div class="text-area">
-                        <p class="tit">Issues <sup>1</sup> </p>
-                        <p class="desc">We’ll make a mobile magazine<br>using html, css only.</p>
+                        <p class="tit stagger-item">Issues <sup>1</sup> </p>
+                        <p class="desc stagger-item">We’ll make a mobile magazine<br>using html, css only.</p>
                     </div>
                 </div>
             </div>
 
             <!-- slide -->
             <ul class="slide-issue">
-                <li class="ec"></li>
-                <li class="ec"></li>
-                <li class="ec"></li>
+                <li class="ec stagger-item right"></li>
+                <li class="ec stagger-item right"></li>
+                <li class="ec stagger-item right"></li>
             </ul>
 
             <!-- text list -->
             <ul class="list-txt-issue">
-                <li class="effect-mouse">
+                <li class="effect-mouse stagger-item">
                     <div class="num">1</div>
                     <div class="infos">
                         <p class="title">Hello World</p>
@@ -70,7 +71,7 @@
                             deserunt consequat. Aute pariatur duis culpa ea.</p>
                     </div>
                 </li>
-                <li class="effect-mouse">
+                <li class="effect-mouse stagger-item">
                     <div class="num">2</div>
                     <div class="infos">
                         <p class="title">Hello World</p>
@@ -78,7 +79,7 @@
                             deserunt consequat. Aute pariatur duis culpa ea.</p>
                     </div>
                 </li>
-                <li class="effect-mouse">
+                <li class="effect-mouse stagger-item">
                     <div class="num">3</div>
                     <div class="infos">
                         <p class="title">Hello World</p>
@@ -91,7 +92,12 @@
         </section>
 
         <footer id="footer">
-
+            <nav class="gnb">
+                <a href="index.html" class="cover effect-mouse"><img src="img/icon/cover.svg" alt=""></a>
+                <a href="issue.html" class="issue effect-mouse  active"><img src="img/icon/issue.svg" alt=""></a>
+                <a href="like.html" class="like effect-mouse"><img src="img/icon/like.svg" alt=""></a>
+                <a href="my.html" class="my effect-mouse"><img src="img/icon/more.svg" alt=""></a>
+            </nav>
         </footer>
 
     </section>
